@@ -20,3 +20,19 @@ int main()
 	
 	return 0;
 }
+void statement(){
+	
+	
+	int c;
+	int fact = 1;
+
+	
+	cout << "\n---------------MENU----------------";
+	cout << "\n    1. BASIC OPERATIONS";
+	cout << "\n    2. TRIGNOMETRIC OPERATIONS";
+	cout << "\n    3. ALGEBRIC OPERATIONS";
+	cout << "\n    4. LOGARITHMIC OPERATIONS";
+	cout << "\n    5. ADDITIONAL OPERATIONS";
+	cout << "\n    6. COMPLEX NUMBER OPERATIONS";
+
+
