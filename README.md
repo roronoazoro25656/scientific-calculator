@@ -198,6 +198,60 @@ void statement(){
 				    cout <<	"\nINVALID OPTION";
 	}
 	                break;
+		 case 4: 
+	cout << "\n---------------MENU----------------";
+	cout << "\n    1. LOGARITHM (base 10)";
+	cout << "\n    2. NATURAL LOGARITHM (base e)" ;
+	cout << "\n    3. CUSTOM BASE LOGARITHM" ;	
+
+	    	cout << "\n\n ENTER OPTION: ";
+	    	cin >> menu; 
+			
+			switch(menu) {
+				
+				case 1:
+					int num;
+					
+					cout << "\nEnter A Number: ";
+					cin >> num;
+					if(num>=0){
+					cout << "\nThe Log (base 10) of " << num << " is: " << log10(num);
+				}else {
+					cout << "\nINVALID NUMBER";
+				}
+					break;
+				
+				case 2:
+					
+					cout << "\nEnter A Number: ";
+					cin >> num;
+					if(num>=0){
+					cout << "\nThe Natural Log (base e) of " << num << " is: " << log(num);
+				}else {
+					cout << "\nINVALID NUMBER";
+				}
+					break;
+				
+				case 3:
+					double base;
+					cout << "\nEnter A Number: ";
+					cin >> num;
+					cout << "\nEnter A Base: ";
+					cin >> base;
+					
+					if(num>=0 && base>=0){
+					cout << "\nThe Custom Log (base " << base << " ) of "  << num << " is: " << log(num)/log(base);
+				}else {
+					cout << "\nINVALID NUMBER";
+				}
+					break;
+				
+				default:
+				 cout << "\nINVALID OPTION"	;
+					
+			}   
+			
+			break;
 				    
 
 
