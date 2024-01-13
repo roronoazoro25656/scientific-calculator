@@ -396,6 +396,157 @@ void statement(){
 	    	}
 	    	
 	    	break;
+      case 6: {
+	    	
+	    	cout << "\n---------------MENU----------------";
+	cout << "\n    1. ADDITION OF COMPLEX NUMBERS";
+	cout << "\n    2. SUBTRACTION OF COMPLEX NUMBERS" ;
+	cout << "\n    3. MULTIPLICATION OF COMPLEX NUMBERS" ;
+	cout << "\n    4. DIVISION OF COMPLEX NUMBERS";
+	cout << "\n    5. CONJUGATE OF COMPLEX NUMBERS" ;
+	
+	cout << "\n\n ENTER OPTION: ";
+	cin >> menu; 
+	
+	switch(menu) {
+		
+		case 1: {
+			
+    double real1, imag1, real2, imag2;
+    double realSum, imagSum;
+
+    cout << "Enter The Real Part of the First Complex Number: ";
+    cin >> real1;
+	
+	cout << "Enter The Imaginary Part of the First Complex Number: ";
+	cin>> imag1;
+
+    cout << "Enter The Real Part of the Second Complex Number: ";
+    cin >> real2;
+	
+	cout << "Enter The Imaginary Part of the Second Complex Number: ";
+	cin>> imag2;
+
+    realSum = real1 + real2;
+    imagSum = imag1 + imag2;
+
+    cout << "\n\nThe sum of the complex numbers is: " << realSum << " + " << imagSum << "i" << endl;			
+			
+			
+			break;
+		}
+		
+		case 2: {
+			
+	double real1, imag1, real2, imag2;
+    double realSub, imagSub;
+
+    cout << "Enter The Real Part of the First Complex Number: ";
+    cin >> real1;
+	
+	cout << "Enter The Imaginary Part of the First Complex Number: ";
+	cin>> imag1;
+
+    cout << "Enter The Real Part of the Second Complex Number: ";
+    cin >> real2;
+	
+	cout << "Enter The Imaginary Part of the Second Complex Number: ";
+	cin>> imag2;
+
+    realSub = real1 - real2;
+    imagSub = imag1 - imag2;
+
+    cout << "\n\nThe Subtraction of the complex numbers is: " << realSub << " - " << imagSub << "i" << endl;			
+			
+			break;
+		}
+		
+		case 3: {
+			
+						
+	double real1, imag1, real2, imag2;
+    double realSub, imagSub;
+
+    cout << "Enter The Real Part of the First Complex Number: ";
+    cin >> real1;
+	
+	cout << "Enter The Imaginary Part of the First Complex Number: ";
+	cin>> imag1;
+
+    cout << "Enter The Real Part of the Second Complex Number: ";
+    cin >> real2;
+	
+	cout << "Enter The Imaginary Part of the Second Complex Number: ";
+	cin>> imag2;
+
+    realSub = real1*real2 - imag1*imag2 ;
+    imagSub = real1*imag2 + imag1*real2;
+
+    cout << "\n\nThe Multiplication of the complex numbers is: " << realSub << " + " << imagSub << "i" << endl;
+			
+			break;
+		}
+		
+		case 4: {
+			
+	double real1, imag1, real2, imag2;
+    double realSub, imagSub, denominator;
+
+    cout << "Enter The Real Part of the First Complex Number: ";
+    cin >> real1;
+	
+	cout << "Enter The Imaginary Part of the First Complex Number: ";
+	cin>> imag1;
+
+    cout << "Enter The Real Part of the Second Complex Number: ";
+    cin >> real2;
+	
+	cout << "Enter The Imaginary Part of the Second Complex Number: ";
+	cin>> imag2;
+	
+    denominator = real2*real2 + imag2*imag2;
+    realSub = (real1*real2 + imag1*imag2) / denominator;
+    imagSub = (real1*imag2 - imag1*real2) / denominator;
+
+    cout << "\n\nThe Division of the complex numbers is: " << realSub << " + " << imagSub << "i" << endl;
+    
+			break;
+		}
+		
+		case 5: {
+			
+		double real1, imag1;
+		
+        cout << "Enter The Real Part of the First Complex Number: ";
+    	cin >> real1;
+	
+		cout << "Enter The Imaginary Part of the First Complex Number: ";
+		cin>> imag1;
+
+
+        double real_part = real1;
+    	double imaginary_part = -imag1;
+
+    	cout << "\nThe conjugate of the complex number is: " << real_part << " + " << imaginary_part << "i" << std::endl;
+
+			break;
+		}
+		
+		default:
+	    		    cout <<	"\nINVALID OPTION";
+		
+	}	
+		break;
+		}
+		
+		default:
+	    		    cout <<	"\nINVALID OPTION";
+			
+}
+					
+				
+}
+      
 				    
 
 
