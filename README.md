@@ -87,5 +87,56 @@ void statement(){
 		
 	}
 	break;
+ case 2:
+	cout << "\n---------------MENU----------------";
+	cout << "\n    1. SINE";
+	cout << "\n    2. COSINE" ;
+	cout << "\n    3. TANGENT" ;
+	cout << "\n    4. SINE INVERSE";
+	cout << "\n    5. COSINE INVERSE" ;
+	cout << "\n    6. TANGENT INVERSE" ;	
+
+	    	cout << "\n ENTER OPTION: ";
+	    	cin >> menu;
+	    	
+	    	switch(menu){
+	    		
+	    		case 1:
+	    			int a;
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nSin( " << a << " ) is " << sin(a);
+	    			break;
+	    		case 2:
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nCos( " << a << " ) is " << cos(a);
+	    			break;
+	    		case 3:
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nTan( " << a << " ) is " << tan(a);
+	    			break;
+	    		case 4:
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nArcsin( " << a << " ) is " << asin(a);
+	    			break;
+	    		case 5:
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nArccos( " << a << " ) is " << acos(a);
+	    			break;
+	    		case 6:
+	    			cout << "\nEnter a Number: ";
+	    			cin >> a;
+	    			cout << "\nArctan( " << a << " ) is " << atan(a);
+	    			break;
+	    		default:
+	    		    cout <<	"\nINVALID OPTION";
+	    	
+			}
+			break;
+				    
 
 
