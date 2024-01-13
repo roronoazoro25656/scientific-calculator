@@ -252,6 +252,150 @@ void statement(){
 			}   
 			
 			break;
+   case 5: 
+		
+	cout << "\n---------------MENU----------------";
+	cout << "\n    1. MODULUS (REMAINDER)";
+	cout << "\n    2. PERCENTAGE CALCULATOR" ;
+	cout << "\n    3. GREATEST COMMON DIVISOR  (GCD)" ;
+	cout << "\n    4. LEAST COMMON MULTIPLE (LCM)";
+	cout << "\n    5. FLOOR (ROUND DOWN)" ;
+	cout << "\n    6. CEILING (ROUND UP)" ;
+	
+	cout << "\n\n ENTER OPTION: ";
+	cin >> menu; 
+	
+	switch(menu) {
+				
+				case 1: {
+					
+					int num1, num2, remainder;
+					 
+					cout << "Enter First Number: ";
+					cin >> num1;
+					cout << "Enter Second Number: ";
+					cin >> num2;
+					
+					remainder= num1 % num2 ;
+					
+					cout << "The Modulus of Two Numbers are " << remainder ;
+					
+					
+					break;
+				}
+				
+				case 2: {
+					
+					float num1, num2;
+				    float percent; 
+					 
+					cout << "Enter Marks Obatined : ";
+					cin >> num1;
+					cout << "Enter Total Number: ";
+					cin >> num2;
+					
+					percent = num1/num2*100;
+		
+					cout << "The Percentage is " << percent ;
+
+					
+					break;
+				}
+				
+				case 3: {
+					
+					int a , b , c;
+					int smallest;
+					
+					cout << "Enter First Number: ";
+					cin >> a;
+					cout << "Enter Second Number: ";
+					cin >> b;
+					cout << "Enter Third Number: ";
+					cin >> c;
+					
+					
+					
+					if(a<b && a<c) {
+						smallest = a;
+					}else if(b<a && b<c) {
+						smallest = b;
+					}else{
+						smallest = c;
+					}
+						
+					int gcd;
+					for(int i=smallest;i>=1;i--) {
+	            	if(a%i==0 && b%i==0 && c%i==0) {
+			        gcd = i;
+			break;
+		}
+	}
+	
+	       cout << "The GCD of The Numbers are "<<gcd;
+					
+					
+					break;
+				}
+				
+				case 4: {
+					
+						int a , b , c;
+					int lcm;
+					
+					cout << "Enter First Number: ";
+					cin >> a;
+					cout << "Enter Second Number: ";
+					cin >> b;
+					cout << "Enter Third Number: ";
+					cin >> c;
+					
+					
+					for(int i=1;i<=a*b*c;i++) {
+			if(i%a==0 && i%b==0 && i%c==0) {
+			lcm = i;
+			break;
+		}
+	}
+	
+	       cout << "The LCM of The Numbers are "<<lcm;
+					
+					break;
+				}
+				
+				case 5: {
+					
+                double number;
+				
+				cout << "Enter A Number To Round Up: ";
+				cin >> number;
+				
+				
+            cout << "The rounded down number is: " << floor(number);
+					
+			break;
+				}
+				
+				case 6: {
+					
+				double number;
+				
+				cout << "Enter A Number To Round Up: ";
+				cin >> number;
+
+            cout << "The rounded down number is: " << ceil(number);	
+					
+					
+					break;
+				}
+				
+				default:
+	    		    cout <<	"\nINVALID OPTION";
+	    		    
+	    		break;
+	    	}
+	    	
+	    	break;
 				    
 
 
