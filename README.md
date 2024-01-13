@@ -137,6 +137,67 @@ void statement(){
 	    	
 			}
 			break;
+   case 3:
+	cout << "\n---------------MENU----------------";
+	cout << "\n    1. EXPONENTIATION";
+	cout << "\n    2. SQUARE ROOT" ;
+	cout << "\n    3. CUBE ROOT" ;
+	cout << "\n    4. nTH ROOT " ;
+	cout << "\n    5. FACTORIAL" ;
+	cout << "\n    6. ABSOLUTE VALUE" ;	
+
+	    	cout << "\n\n ENTER OPTION: ";
+	    	cin >> menu;
+				
+			switch(menu){
+	    		
+	    		case 1:
+	    			float base, exponent;
+	    			cout << "\nEnter The Base: ";
+	    			cin >> base;
+	    			cout << "\nEnter The Exponent: ";
+	    			cin >> exponent;
+	    			cout << "\n\npow( " << base << " , " << exponent << " )  =  " << pow(base,exponent);
+	    			break;
+	    		case 2:
+	    			double num;
+	    			cout << "\nEnter A Number: ";
+	    			cin >> num;
+	    			cout << "\nThe Square Root of " << num << " is: " << sqrt(num);
+	    			break;
+	    		case 3:
+	    			cout << "\nEnter A Number: ";
+	    			cin >> num;
+	    			cout << "\nThe Cube Root of " << num << " is: " << cbrt(num);
+	    			break;
+	    		case 4:
+	    			int n;
+	    			cout << "\nEnter A Number: ";
+	    			cin >> num;
+	    			cout << "\nEnter The Value of N ";
+	    			cin >> n;
+	    			cout << "\nThe " << n << " Root of " << num << " is: " << pow(num,1.0/n);
+	    			break;
+	    		case 5:
+	    			cout << "\nEnter A Number: ";
+	    			cin >> num;
+	    			for(int i=num; i>=1; i--){
+	    				cout << endl << i;
+	    				fact*=i;
+					}
+					cout << "\nThe Factorial of " << num << " is: " << fact;
+					break;
+				case 6: 
+				    cout << "\nEnter A Number: ";
+				    cin >> num;
+				    
+				    cout << "The Absolute Value of " << num << " is: " << abs(num);
+				    break;
+					
+                    default:
+				    cout <<	"\nINVALID OPTION";
+	}
+	                break;
 				    
 
 
